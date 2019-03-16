@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".Registro">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topo_cadastro" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="30sp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="123dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/nome_completo" />
+
+        <EditText
+
+            android:id="@+id/nome_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/color_edittext_login"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:hint="Nome"
+            android:inputType="text"
+            android:padding="10sp"
+            android:singleLine="true"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/email_registro" />
+
+        <EditText
+
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/color_edittext_login"
+            android:fontFamily="@font/nunito_sans_extralight"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10sp"
+            android:singleLine="true"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="193dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/img_proximo"
+            android:gravity="center_vertical|center_horizontal|center" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/img_bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/textView"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/img_siganos"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_face"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/face"
+                android:contentDescription="Ir para o Facebook" />
+
+            <Button
+                android:id="@+id/btn_insta"
+                android:layout_width="20dp"
+
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/btn_face"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/insta" />
+
+            <Button
+                android:id="@+id/btn_in"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/btn_face"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/in"
+                tools:layout_editor_absoluteX="305dp"
+                tools:layout_editor_absoluteY="654dp" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
